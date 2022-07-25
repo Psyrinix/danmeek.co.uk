@@ -1,6 +1,6 @@
 /**
  * @package Thrall.runner
- * @author Universal Music Group < author dan.meek@umusic.com >
+ * @author Dan Meek
  */
 
 // Environment types
