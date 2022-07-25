@@ -1,0 +1,51 @@
+//** Scratch |
+
+.color-list {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__item {
+		flex: 0 32%;
+		height: 100px;
+		margin-bottom: 2%;
+		list-style: none;
+	}
+
+	&__swatch {
+		// width: 100px;
+		height: 100px;
+		display: block;
+
+		&--primary {
+			$color: $color-primary;
+			background: $color;
+
+			&-tint {
+				background: lighten($color, 10%);
+			}
+
+			&-shade {
+				background: darken($color, 10%);
+			}
+		}
+
+		&--secondary {
+			$color: $color-secondary;
+			background: $color;
+
+			&-tint {
+				background: lighten($color, 10%);
+			}
+
+			&-shade {
+				background: darken($color, 10%);
+			}
+		}
+	}
+
+	&__label {
+		@include font($font-h5-mobile);
+	}
+}

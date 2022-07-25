@@ -1,0 +1,1 @@
+const whatInput = require("what-input");

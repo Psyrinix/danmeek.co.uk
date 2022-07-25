@@ -1,0 +1,12 @@
+//- Hero Component
+mixin hero(label, config = {})
+	- const title = config.title || "Title";
+	- const subTitle = config.subTitle || "Subtitle";
+	- const ctaLabel = config.ctaLabel || "CTA Label";
+	- const ctaLink = config.ctaLink || "#";
+
+
+	hero-component.hero
+		h1.hero__title #{title}
+		p.hero__subtitle #{subTitle}
+		a.hero__cta(href=ctaLink) #{ctaLabel}

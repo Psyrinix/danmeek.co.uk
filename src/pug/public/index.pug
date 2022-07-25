@@ -1,0 +1,39 @@
+include ../global/settings
+
+- var pageTitle = 'Dan Meek - Explorer 🏕 Guitarist 🎸 Nature Lover 🌳 Web Developer 💻'
+
+doctype html
+html.no-js
+    head
+
+        include ../global/tracking-head
+        include ../global/meta
+        include ../global/includes
+        include ../global/favicons
+
+        title #{pageTitle}
+        include ../global/scripts-head
+
+    body
+
+        section.section
+            .section__panel.section__panel--primary
+                img(src="/assets/images/Dan@2x.jpg" alt="Dan Meek -  Frontend Web Developer")
+            .section__panel.section__panel--secondary
+                .content
+                    .content__wrapper
+                        h3.h3 Front-end Web Developer
+                        h1.h1 Dan<br />Meek
+                        p.paragraph Explorer 🏕 Guitarist 🎸 Nature Lover 🌳 Web Developer 💻
+                        hr.hr
+                        a.button(href="/assets/Dan-Meek-CV.pdf" download) Download CV
+                        .content__button-container
+                            a.button.button--icon(href="mailto:%6de@%64%61nmee%6b%2e%63%6f.u%6b")
+                                svg
+                                    use(xlink:href="/assets/images/email.svg#email")
+                            a.button.button--icon(target="_blank" href="https://www.instagram.com/psyrinix/")
+                                svg
+                                    use(xlink:href="/assets/images/instagram.svg#instagram")
+                            a.button.button--icon(target="_blank" href="https://www.linkedin.com/in/dan-meek-70540947/")
+                                svg
+                                    use(xlink:href="/assets/images/linkedin.svg#linkedin")

@@ -1,0 +1,12 @@
+//** Settings | Timings
+
+// Default timings
+$transition-speed: .25s;
+$animation-speed: .45s;
+// Default Sections timings
+$section-item-transition-speed: 1s;
+$section-content-transition-speed: .25s;
+
+$transition-ease: cubic-bezier(0.58, 0, 0.01, 1);
+$mask-transition: cubic-bezier(.25, .46, .45, .94);
+$bounce-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);

@@ -1,0 +1,5 @@
+mixin svg-use(id, config = {})
+	- const classModifier = config.classModifier ? config.classModifier : id
+
+	svg(class=`icon icon--${classModifier}`)&attributes(attributes)
+		use(xlink:href=`#${id}`)

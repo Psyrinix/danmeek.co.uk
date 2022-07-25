@@ -1,0 +1,50 @@
+//** Atoms | Buttons
+
+.button {
+    $this: &;
+
+    @include button-reset;
+    @include font($font-h3-desktop);
+
+    background: $color-white;
+    border-radius: 40px;
+    color: $color-black;
+    display: inline-block;
+    padding: $spacing $spacing-largest;
+    position: relative;
+    transition: $transition-speed * 2 $transition-ease background, $transition-speed * 2 $transition-ease color;
+    z-index: 3;
+
+    &:hover {
+        background: lighten($color-primary, 15%);
+        color: $color-white;
+    }
+
+    &--icon {
+        background: 0;
+        height: 40px;
+        margin: $spacing;
+        padding: $spacing-small;
+        width: 40px;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+
+        svg {
+            fill: white;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.button-container {
+    @include clearfix;
+
+    &--centered {
+        margin: auto;
+        text-align: center;
+    }
+}

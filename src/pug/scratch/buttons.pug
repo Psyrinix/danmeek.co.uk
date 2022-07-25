@@ -1,0 +1,45 @@
+.rich-text
+	h1 Buttons
+	+button('button', {
+		type: "open",
+		style: "dark",
+		href: "",
+	})
+
+	+button('button', {
+		type: "filled",
+		style: "dark",
+		href: "",
+	})
+
+	+button('hyperlink', {
+		type: "filled",
+		style: "dark",
+		href: "/contact.html",
+	})
+.rich-text(style="background: #111;color: #fff")
+	h1 Buttons (Light)
+
+	+button('button', {
+		type: "open",
+		style: "light",
+		href: "",
+	})
+
+	+button('button', {
+		type: "filled",
+		style: "light",
+		href: "",
+	})
+
+	+button('hyperlink', {
+		type: "filled",
+		style: "light",
+		href: "/contact.html"
+	})
+	+button('hyperlink (external)', {
+		type: "filled",
+		style: "light",
+		href: "https://google.com",
+		external: true
+	})

@@ -1,0 +1,8 @@
+// aspect ratio
+// rewritten, simplified
+@mixin aspect-ratio($w, $h) {
+	$slope: $h / $w;
+	$height: $h - $w * $slope;
+	height: $height;
+	padding-bottom: $slope * 100%;
+}

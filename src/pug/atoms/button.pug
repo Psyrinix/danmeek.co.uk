@@ -1,0 +1,12 @@
+//- Atom | Button
+mixin button(label, config = {})
+	- const blockname = "button--";
+	- const type = blockname + config.type || blockname + "filled";
+	- const style = blockname + config.style || blockname + "dark";
+	- const href = config.href || "";
+	- const external = config.external || false;
+
+	if href
+		a.button(href=href class=type + ' ' + style target=external ? "_blank" : "_self") #{label}
+	else
+		button.button(class=type + ' ' + style) #{label}

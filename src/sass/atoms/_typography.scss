@@ -1,0 +1,112 @@
+//** Atoms | Typography
+
+.h1 {
+    @include font($font-h1-mobile);
+
+    @include breakpoint($breakpoint-desktop) {
+        @include font($font-h1-desktop);
+    }
+}
+
+.h2 {
+    @include font($font-h2-mobile);
+
+    @include breakpoint($breakpoint-desktop) {
+        @include font($font-h2-desktop);
+    }
+}
+
+.h3 {
+    @include font($font-h3-mobile);
+
+    @include breakpoint($breakpoint-desktop) {
+        @include font($font-h3-desktop);
+    }
+}
+
+.h4 {
+    @include font($font-h4-mobile);
+
+    @include breakpoint($breakpoint-desktop) {
+        @include font($font-h4-desktop);
+    }
+}
+
+.h5 {
+    @include font($font-h5-mobile);
+
+    @include breakpoint($breakpoint-desktop) {
+        @include font($font-h5-desktop);
+    }
+}
+
+.h6 {
+    @include font($font-h6-mobile);
+
+    @include breakpoint($breakpoint-desktop) {
+        @include font($font-h6-desktop);
+    }
+}
+
+.paragraph {
+    @include font($paragraph-mobile);
+
+    @include breakpoint($breakpoint-desktop) {
+        @include font($paragraph-desktop);
+    }
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+.list {
+    padding: 0 0 0 rem(18);
+
+    &--unordered {
+        list-style: disc;
+    }
+
+    &--ordered {
+        list-style: numeric;
+    }
+
+    &__item {
+        @include font($paragraph-mobile);
+
+        margin: 0 0 16px;
+
+        @include breakpoint($breakpoint-desktop) {
+            @include font($paragraph-desktop);
+        }
+    }
+}
+
+hr {
+    border: 0;
+    display: block;
+    height: 2px;
+    margin: $spacing-large 0;
+    position: relative;
+    width: 100%;
+
+    &::before {
+        background: rgba($color-black, 0.15);
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        width: 100%;
+    }
+
+    &::after {
+        background: rgba($color-white, 0.15);
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}

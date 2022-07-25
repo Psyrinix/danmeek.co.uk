@@ -1,0 +1,27 @@
+ //** Settings | Breakpoints
+
+ $breakpoint-small-mobile-min: 375px;
+ $breakpoint-mobile-portrait: 420px;
+ $breakpoint-tablet-min: 768px;
+ $breakpoint-desktop-min: 1024px;
+ $breakpoint-above-container-featured: 1440px;
+
+ $container: 1280px;
+ $container-narrow: 768px;
+ $container-featured: 1440px;
+
+ $breakpoint-tablet-height: max-height ($breakpoint-tablet-min);
+ $breakpoint-small-mobile: max-width ($breakpoint-small-mobile-min - 1px);
+ $breakpoint-mobile: max-width ($breakpoint-tablet-min - 1px);
+// Media query breakpoints
+ $breakpoint-above-small-mobile: min-width ($breakpoint-small-mobile-min);
+ $breakpoint-above-mobile-portrait: min-width ($breakpoint-mobile-portrait + 1);
+ $breakpoint-above-mobile: min-width ($breakpoint-tablet-min);
+ $breakpoint-above-tablet-portrait: min-width ($breakpoint-tablet-min + 1);
+ $breakpoint-above-tablet: min-width ($breakpoint-desktop-min + 1);
+ $breakpoint-above-container: min-width ($container + 1);
+ $breakpoint-above-container-featured: min-width ($breakpoint-above-container-featured + 1);
+
+ $breakpoint-tablet: $breakpoint-tablet-min ($breakpoint-desktop-min - 1px);
+ $breakpoint-below-desktop: max-width ($breakpoint-desktop-min - 1px);
+ $breakpoint-desktop: $breakpoint-desktop-min;

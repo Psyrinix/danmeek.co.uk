@@ -1,0 +1,120 @@
+/* ==========================================================================
+		GRID
+========================================================================== */
+
+$grid-columns: 12;
+
+@mixin make-grid($size) {
+	.grid__col--#{$size} {
+		flex-basis: 0;
+		flex-grow: 1;
+		flex-shrink: 0;
+		max-width: 100%;
+	}
+
+	.grid__col--#{$size}-auto {
+		flex: 0 0 auto;
+		width: auto;
+	}
+
+	// Loop through all columns for ordering and column rules
+	@for $i from 1 through $grid-columns {
+		.grid__col--#{$size}-order-#{$i} {
+			order: #{$i};
+		}
+
+		.grid__col--#{$size}-#{$i} {
+			flex: 0 0 calc((100% / #{$grid-columns}) * #{$i});
+			max-width: calc((100% / #{$grid-columns}) * #{$i});
+		}
+	}
+
+	.grid__col--#{$size}-order--1 {
+		order: -1;
+	}
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+
+	&--space-around {
+		justify-content: space-around;
+	}
+}
+
+.grid__col {
+	-ms-flex-positive: 1;
+	-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+	min-height: 1px;
+	position: relative;
+	width: 100%;
+
+	&--flex {
+		display: flex;
+	}
+
+	&--no-equal-height {
+		align-self: flex-start;
+	}
+
+	&--order--1 {
+		order: -1;
+	}
+
+	&--justify {
+		&-start {
+			margin-right: auto;
+		}
+
+		&-center {
+			margin: auto;
+		}
+
+
+		&-end {
+			margin-left: auto;
+		}
+	}
+
+	// Loop through all columns for ordering and column rules
+	@for $i from 1 through $grid-columns {
+		&--#{$i} {
+			flex: 0 0 calc((100% / #{$grid-columns}) * #{$i});
+			max-width: calc((100% / #{$grid-columns}) * #{$i});
+		}
+
+		&--order-#{$i} {
+			order: #{$i};
+		}
+	}
+
+	@include breakpoint($breakpoint-above-mobile) {
+		&--spaced {
+			padding-top: 15px;
+		}
+	}
+}
+
+// Col - sm - 420
+@include breakpoint($breakpoint-above-mobile-portrait) {
+	@include make-grid(sm);
+}
+
+// Col - md - 767
+@include breakpoint($breakpoint-above-mobile) {
+	@include make-grid(md);
+}
+
+// Col - lg - 768
+@include breakpoint($breakpoint-above-tablet-portrait) {
+	@include make-grid(lg);
+}
+
+// Col - xl - 1024
+@include breakpoint($breakpoint-above-tablet) {
+	@include make-grid(xl);
+}

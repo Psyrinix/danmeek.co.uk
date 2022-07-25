@@ -1,0 +1,9 @@
+{
+	"files": [
+		"src/ts/index.ts"
+	],
+	"compilerOptions": {
+		"noImplicitAny": true,
+		"target": "ES6"
+	}
+}

@@ -1,0 +1,12 @@
+//** Settings | Colors
+// Shades
+$color-black: #000000;
+$color-white: #ffffff;
+// Primary Color
+$color-primary: #26548c;
+$color-primary-shade: darken($color-primary, 10%);
+$color-primary-tint: lighten($color-primary, 10%);
+// Secondary Color
+$color-secondary: #6455a0;
+$color-secondary-shade: darken($color-primary, 10%);
+$color-secondary-tint: lighten($color-primary, 10%);

@@ -1,0 +1,23 @@
+{
+	"extends": "stylelint-config-standard",
+	"plugins": [
+		"stylelint-selector-bem-pattern",
+		"stylelint-order",
+		"stylelint-scss"
+	],
+	"rules": {
+		"order/properties-alphabetical-order": true,
+		"at-rule-no-unknown": null,
+		"indentation": 4,
+		"no-empty-source": null,
+		"number-leading-zero": null,
+		"scss/at-rule-no-unknown": true,
+		"plugin/selector-bem-pattern": [{
+				"componentSelectors": "^.([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
+			},
+			{
+				"message": "Class names should match the Hyphenated BEM naming convention (eg .block__element--modifier)"
+			}
+		]
+	}
+}

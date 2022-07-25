@@ -1,0 +1,282 @@
+//** Settings | Typography
+
+$font-primary: (font-family: ("Poppins", sans-serif));
+$font-secondary: (font-family: ("Open Sans", sans-serif));
+
+// ==========================================
+// Mobile
+// ==========================================
+// <h1>
+$font-h1-mobile: map-merge(
+    $font-primary,
+    (
+        font-size: rem(38),
+        font-weight: 500,
+        line-height: (50 / 40),
+    )
+);
+// <h2>
+$font-h2-mobile: map-merge(
+    $font-primary,
+    (
+        font-size: rem(34),
+        font-weight: 500,
+        line-height: (38 / 34))
+    );
+// <h3>
+$font-h3-mobile: map-merge(
+    $font-primary,
+    (
+        font-size: rem(26),
+        font-weight: 500,
+        line-height: (32 / 26),
+    )
+);
+// <h4>
+$font-h4-mobile: map-merge(
+    $font-primary,
+    (
+        font-size: rem(24),
+        font-weight: 500,
+        line-height: (38 / 28))
+    );
+// <h5>
+$font-h5-mobile: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(24),
+        font-weight: 400,
+        line-height: 24 / 24,
+        letter-spacing: rem(1.67),
+        text-transform: uppercase)
+    );
+// <h6>
+$font-h6-mobile: map-merge(
+    $font-primary,
+    (
+        font-size: rem(20),
+        font-weight: 300,
+        line-height: (34 / 20),
+    )
+);
+// <p>
+$paragraph-mobile: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(18),
+        font-weight: 500,
+        line-height:(30 / 18),
+    )
+);
+
+$paragraph-mobile-light: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(18),
+        font-weight: 300,
+        line-height:(30 / 18),
+    )
+);
+
+$paragraph-lead-mobile: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(20),
+        font-weight: 300,
+        line-height: (34 / 24),
+    )
+);
+
+$tagline-mobile: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(16),
+        font-weight: 500,
+        line-height: (20 / 16),
+    )
+);
+// ==========================================
+// Tablet
+// ==========================================
+// <h1>
+$font-h1-tablet: map-merge(
+    $font-primary,
+    (
+        font-size: rem(65),
+        font-weight: 500,
+        line-height: (75 / 65),
+    )
+);
+// <h2>
+$font-h2-tablet: map-merge(
+    $font-primary,
+    (
+        font-size: rem(45),
+        font-weight: 500,
+        line-height: (50 / 45))
+    );
+// <h3>
+$font-h3-tablet: map-merge(
+    $font-primary,
+    (
+        font-size: rem(30),
+        font-weight: 500,
+        line-height: (35 / 30),
+    )
+);
+// <h4>
+$font-h4-tablet: map-merge(
+    $font-primary,
+    (
+        font-size: rem(28),
+        font-weight: 500,
+        line-height: (30 / 24))
+    );
+// <h5>
+$font-h5-tablet: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(24),
+        font-weight: 400,
+        line-height: 24 / 24,
+        letter-spacing: rem(2),
+        text-transform: uppercase)
+    );
+// <h6>
+$font-h6-tablet: map-merge(
+    $font-primary,
+    (
+        font-size: rem(24),
+        font-weight: 300,
+        line-height: (40 / 24),
+    )
+);
+// <p>
+$paragraph-tablet: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(18),
+        font-weight: 500,
+        line-height:(30 / 18),
+    )
+);
+
+$paragraph-lead-tablet: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(24),
+        font-weight: 300,
+        line-height: (40 / 24),
+    )
+);
+
+$tagline-tablet: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(16),
+        font-weight: 500,
+        line-height: (20 / 16),
+    )
+);
+// ==========================================
+// Desktop
+// ==========================================
+// <h1>
+$font-h1-desktop: map-merge(
+    $font-primary,
+    (
+        font-size: rem(68),
+        font-weight: 500,
+        line-height: (85 / 75),
+    )
+);
+// <h2>
+$font-h2-desktop: map-merge(
+    $font-primary,
+    (
+        font-size: rem(60),
+        font-weight: 500,
+        line-height: (70 / 60))
+    );
+// <h3>
+$font-h3-desktop: map-merge(
+    $font-primary,
+    (
+        font-size: rem(20),
+        font-weight: 500,
+        line-height: (30 / 20),
+        text-transform: uppercase,
+    )
+);
+// <h4>
+$font-h4-desktop: map-merge(
+    $font-primary,
+    (
+        font-size: rem(28),
+        font-weight: 500,
+        line-height: (38 / 28))
+    );
+// <h5>
+$font-h5-desktop: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(24),
+        font-weight: 400,
+        line-height: (24 / 24),
+        letter-spacing: rem(2),
+        text-transform: uppercase)
+    );
+// <h6>
+$font-h6-desktop: map-merge(
+    $font-primary,
+    (
+        font-size: rem(24),
+        font-weight: 300,
+        line-height: (40 / 24),
+    )
+);
+// <p>
+$paragraph-desktop: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(18),
+        font-weight: 500,
+        line-height: (30 / 18),
+    )
+);
+
+$paragraph-lead-desktop: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(24),
+        font-weight: 300,
+        line-height: (40 / 24),
+    )
+);
+
+$paragraph-desktop-small: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(12),
+        font-weight: 300,
+        line-height: (30 / 12),
+    )
+);
+
+$paragraph-desktop-light: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(18),
+        font-weight: 300,
+        line-height: (30 / 18),
+    )
+);
+
+$tagline-desktop: map-merge(
+    $font-secondary,
+    (
+        font-size: rem(16),
+        font-weight: 500,
+        line-height: (24 / 16),
+    )
+);

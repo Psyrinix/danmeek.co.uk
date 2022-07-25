@@ -1,0 +1,23 @@
+include ../global/settings
+
+- var pageTitle = 'Dan Meek | Scratch'
+
+doctype html
+html.no-js
+	head
+
+		include ../global/tracking-head
+		include ../global/meta
+		include ../global/includes
+		include ../global/favicons
+
+		title #{pageTitle}
+		include ../global/scripts-head
+
+	body
+
+		include ../scratch/rte
+		include ../scratch/rte-language
+		include ../scratch/buttons
+		include ../scratch/colours
+
