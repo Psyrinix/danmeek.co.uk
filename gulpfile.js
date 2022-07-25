@@ -46,7 +46,7 @@ function changelog() {
 
 function deployToGh() {
     src(`${config.destDirs.pug}/**/*`)
-        .pipe(dest(`./gh-pages/`))
+        .pipe(dest(`./docs/`))
 }
 
 function version() {
